@@ -20,18 +20,29 @@ public class Perhitungan implements ContohInterface {
     }
 
     @Override
-    public String PrintJudul(String Judul) {
-        return Judul;
+    public void PrintJudul() {
+        System.out.println("Judul Dalam Interface");
     }
 
     @Override
-    public int HitungTambah(int a, int b) {
-        return a + b;
+    public void HitungTambah() {
+        this.hasil = this.a + this.b;
     }
 
     @Override
-    public int HitungKali(int a, int b) {
-        return a * b;
+    public void HitungKali() {
+        this.hasil = this.a * this.b;
+    }
 
+    public int Penjumlahan(int c, int d){
+        this.a=c;
+        this.b=d;
+        HitungTambah();
+        return this.hasil;
+    }
+    public int Perkalian(int e, int f){
+        this.a=e;
+        this.b=f;
+        return this.hasil;
     }
 }
