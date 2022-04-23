@@ -3,18 +3,10 @@ import Model.Perhitungan;
 public class JalankanPerhitungan {
     public static void main(String[] args) {
         Perhitungan s = new Perhitungan(4,6,0);
-        System.out.println(s.PrintJudul("Judul Dalam Interface"));
-
-        int hasiltambah;
-        hasiltambah = s.HitungTambah(4,6);
-        System.out.println(hasiltambah);
-        System.out.println(s.HitungTambah(4,6));
-        System.out.println();
-
-        int hasilkali;
-        hasilkali = s.HitungKali(4,6);
-        System.out.println(hasilkali);
-        System.out.println(s.HitungKali(4,6));
-
+        s.PrintJudul();
+        int hasilTambah = s.Penjumlahan(4,6);
+        System.out.println("Hasil Penjumlahan = " + hasilTambah);
+        int hasilKali = s.Perkalian(4,6);
+        System.out.println("Hasil Perkalian = " + hasilKali);
     }
 }
